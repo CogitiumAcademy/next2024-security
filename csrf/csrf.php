@@ -17,6 +17,7 @@
         <?php
             unset($_SESSION['token']);
             $_SESSION['token'] = bin2hex(openssl_random_pseudo_bytes(6));
+            var_dump($_SESSION);
         ?>
 
         <a href="csrf_sans_token.php?id=12">Supprimer le 12 (sans token)</a>
